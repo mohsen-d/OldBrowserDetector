@@ -1,0 +1,226 @@
+/* modal
+   ========================================*/
+   
+#BrowserWarningModal{
+    
+}
+
+#modalWin{
+  position:fixed!important; /* for other browsers */
+  position:relative; 		/* for IE 6 */
+  left:0;                   /* this will be modified by javascript */
+  top:0;                    /* this will be modified by javascript */
+  z-index:9999;
+  color:#444;
+  padding:20px;
+  background-color:#fff;
+  border:solid 1px #777;
+  direction:ltr;
+  float:left;
+  width:500px;
+  
+}
+
+#closeOldBrowserWarningModal{
+	text-indent: -1000px;
+	height:38px;
+	width:63px;
+	background:#FF7E00 url(../images/close_btn.jpg) no-repeat top center;
+	border-right:solid 10px #FF5A00;
+	position:absolute;
+	bottom:10px;
+	left:0px;
+	overflow:hidden;
+}
+
+#modalContent{
+  color:#444;
+  font-size:1.1em;
+  font-family:Arial;
+  float:right;
+}
+#modalContent h2
+{
+     color:Red;
+     margin-top:.2em;
+      width:100%;
+      text-align:right;
+}
+#modalContent div.message
+{
+    font-family:Tahoma;
+    text-align:justify;
+    font-size:.7em;
+    margin-bottom:20px;
+      width:100%;
+      text-align:justify;
+      direction:rtl;
+}
+
+#modalContent ul.browser-options
+{
+    text-align:center;
+	list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#modalContent ul.browser-options li
+{
+	 background-image:url(../images/browsers.jpg);
+	 display:inline!important;
+	 float:right;
+	 width:63px;
+	 height:65px;
+	 margin-left:20px;
+}
+
+#modalContent ul.browser-options li a
+{
+	 display:block;
+	 width:63px;
+	 height:65px;
+}
+
+#modalContent ul.browser-options li.firefox
+{
+	background-position:0px 0px;
+}
+#modalContent ul.browser-options li.chrome
+{
+	background-position:-63px 0px;
+}
+#modalContent ul.browser-options li.opera
+{
+	background-position:-126px 0px;
+}
+#modalContent ul.browser-options li.ie
+{
+	background-position:-189px 0px;
+}
+#modalContent ul.browser-options li.safari
+{
+	background-position:-252px 0px;
+}
+
+#modalBg {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+  top:0;
+  left:0;
+}
+  
+
+/* message
+   ========================================================= */
+   
+#BrowserWarningMessage
+{
+    background-color:#CD0606;
+    height:70px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	direction:rtl;
+	/*padding-right:70px;*/
+	border-bottom:solid 1px #969696;
+	overflow:hidden;
+}
+
+#closeOldBrowserWarningMessage
+{
+	text-indent: -1000px;
+	height:70px;
+	width:40px;
+	background:#CD0606 url(../images/close_btn_red.jpg) no-repeat center right;
+	position:absolute;
+	top:0px;
+	right:20px;
+	overflow:hidden;
+}
+
+#messageContent
+{
+    margin:auto;
+    max-width:980px;
+}
+#messageContent h2
+{
+     display:inline;
+     width:60px;
+     float:right;
+     color:#fff;
+	 margin-right:60px;
+	 margin-top:1em;
+}
+
+#messageContent div.message
+{
+    display:inline-block;
+    width:460px;
+    color:#fff;
+    font-family:Tahoma;
+    font-size:.8em;
+    float:right;
+    height:60px;
+    padding-top:10px;
+    text-align:justify;
+}
+
+#messageContent .links
+{
+    display:inline-block;
+    width:350px;
+    background-color:#EAEAEA;
+    float:left;
+    height:65px;
+    padding-top:5px;
+}
+
+#messageContent ul.browser-options
+{
+    text-align:center;
+	list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#messageContent ul.browser-options li
+{
+    background-image:url(../images/browsers_small.jpg);
+	 float:left;
+	 width:44px;
+	 height:45px;
+	 margin-left:20px;
+	 margin-top:8px;
+}
+
+#messageContent ul.browser-options li a
+{
+	 display:block;
+	 width:44px;
+	 height:45px;
+}
+#messageContent li.firefox
+{
+	background-position:0px 0px;
+}
+#messageContent li.chrome
+{
+	background-position:-44px 0px;
+}
+#messageContent li.opera
+{
+	background-position:-88px 0px;
+}
+#messageContent li.ie
+{
+	background-position:-132px 0px;
+}
+#messageContent li.safari
+{
+	background-position:-176px 0px;
+}
